@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yoghurt.back.dao.AccountMapper">
+    <resultMap id="BaseResultMap" type="com.yoghurt.back.pojo.Account">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="record_type" jdbcType="INTEGER" property="record_type" />
+        <result column="category" jdbcType="VARCHAR" property="category" />
+        <result column="subcategory" jdbcType="VARCHAR" property="category" />
+        <result column="record_desc" jdbcType="VARCHAR" property="record_desc" />
+        <result column="record_value" jdbcType="FLOAT" property="record_value" />
+        <result column="record_date" jdbcType="DATE" property="record_date" />
+        <result column="pay" jdbcType="VARCHAR" property="pay" />
+        <result column="userid" jdbcType="VARCHAR" property="userid" />
+    </resultMap>
+    <select id="findAccountByUserid" resultType="com.yoghurt.back.pojo.Account">
+        select * from account
+        where userid = #{userid,jdbcType=VARCHAR}
+    </select>
+    <insert id="updateAccount" parameterType="com.yoghurt.back.pojo.Account">
+        insert into account (record_type, category, subcategory, record_desc, record_value, record_date, pay, userid)
+    values (#{record_type,jdbcType=VARCHAR}
+    , #{category,jdbcType=VARCHAR}
+    , #{subcategory,jdbcType=VARCHAR}
+    , #{record_desc,jdbcType= VARCHAR}
+    , #{record_value,jdbcType=FLOAT}
+    , #{record_date,jdbcType=DATE}
+    , #{pay,jdbcType=VARCHAR}
+    , #{userid,jdbcType=VARCHAR}
+      )
+    </insert>
+</mapper>
