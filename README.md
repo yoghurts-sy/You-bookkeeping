@@ -9,7 +9,7 @@
   * 再通过Mybatis来操作数据库实现增删改查
   * 最后使用echarts渲染饼图。 
 * 项目负责：开发全程。
-* 项目地址：
+* 项目地址：https://github.com/yoghurts-sy/You-bookkeeping
 
 ## 2. 待完善的需求
 
@@ -34,3 +34,11 @@
 
 ![](https://markdowngraph-1305163160.cos.ap-shenzhen-fsi.myqcloud.com/img/20210320122256.png)
 
+
+
+## 4. 启动项目
+
+1. 打开打开微信开发者工具导入前端front文件夹
+2. 在idea里启动后端项目back，并启动项目启动类BackApplication
+3. 在另一个idea里打开前端项目文件夹front，利用npm启动前端项目
+4. 在微信开发者工具即可看到项目已启动。
