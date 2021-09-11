@@ -1,0 +1,37 @@
+<import src="/modules/mpvue-echarts/src/echarts.vue.wxml" /><template name="8bfcc5a0">
+  <view class="_div data-v-862e21a6">
+    <view class="_div data-v-862e21a6 wrap"><template canvasId="demo-canvas" data="{{...$root[$kk+'0'], $root}}" is="08b9c5c2"></template></view>
+    <view class="_div data-v-862e21a6 wrapR">
+      <view class="_div data-v-862e21a6 wrapR-item" style="color:#91CC75 ">收入:{{income}}</view>
+      <view class="_div data-v-862e21a6 wrapR-item" style="color:#DF2A4E ">支出:{{pay}}</view>
+      <view class="_div data-v-862e21a6 wrapR-item" style="color:#5470C6 ">结余:{{surplus}}</view>
+    </view>
+    <scroll-view class="_scroll-view data-v-862e21a6 account-area" scroll-y="{{true}}" bindscrolltolower="handleProxy" bindscroll="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-862e21a6 item">
+        <view wx:key="index" key="{{index}}" class="_div data-v-862e21a6 item-details" wx:for="{{processedItems}}" wx:for-index="index" wx:for-item="item" style=" {{'opacity:' + item.opacity + ';width: ' + item.width + '%'}}">
+          <view class="_div data-v-862e21a6 item-details-left">
+            <view class="_div data-v-862e21a6 item-details-category"><label class="_span data-v-862e21a6">{{item.category}}</label></view>
+          </view>
+          <view class="_div data-v-862e21a6 item-details-middle">
+            <view class="_div data-v-862e21a6 details-top">
+              <view class="_div data-v-862e21a6 item-details-subcategory"><label class="_span data-v-862e21a6">
+                  {{item.subcategory}}
+                </label></view>
+              <view class="_div data-v-862e21a6 item-details-pay"><label class="_span data-v-862e21a6 {{'pay-by-' + item.payEn}}">
+                  {{item.payCn}}
+                </label></view>
+            </view>
+            <view class="_div data-v-862e21a6 details-bottom">
+              <view class="_div data-v-862e21a6 item-details-desc"><label class="_span data-v-862e21a6">
+                  {{item.record_desc}}
+                </label></view>
+            </view>
+          </view>
+          <view class="_div data-v-862e21a6 item-details-right">
+            <view class="_div data-v-862e21a6 item-details-value"><label class="_span data-v-862e21a6 {{item.record_type === 0 ? 'out' : 'in'}}">{{item.record_value}}</label></view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</template>

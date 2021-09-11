@@ -212,16 +212,30 @@
                 }
             },
             scrolltolower(){
+                for (let i = 0; i < this.processedItems.length; i++) {
+                    this.processedItems[i].opacity = 1
+                    this.processedItems[i].width = 100
+                }
                 console.log('lower')
             },
             scroll(e) {
                 this.exitStyle(e.target.scrollTop)
-                console.log(e.target.scrollTop)
+                console.log("scroll-->"+e.target.scrollTop)
             },
             /*还有点小bug*/
+            /**
+             * 快速往回时有 bug
+             * @param position
+             */
             exitStyle(position) {
                 const index = Math.floor(position/80)
+                console.log("index-->"+index);
                 const level = position/80 - index
+                console.log("level-->"+level);
+                for (let i = index; i < index+2; i++) {
+                    this.processedItems[i].opacity = 1
+                    this.processedItems[i].width = 100
+                }
                 for(let i=index;i<index+2;i++){
                     if(i === index){
                         this.processedItems[i].opacity = 1 - level

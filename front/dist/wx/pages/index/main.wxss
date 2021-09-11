@@ -1,0 +1,187 @@
+
+.index-title.data-v-7efcd81b {
+  height: 15vh;
+  background-color: #322f3b;
+  overflow: hidden;
+}
+.index-title>._img.data-v-7efcd81b {
+  width: 100%;
+  position: relative;
+  top: -192rpx;
+}
+.login-area.data-v-7efcd81b {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #e2e1e4;
+}
+.wrap {
+  height: 19vh;
+  width: 48%;
+  margin-top: 0;
+  margin-left: 40rpx;
+  float: left;
+}
+.wrapR {
+  height: 19vh;
+  width: 38%;
+  margin-top: 0;
+  float: right;
+}
+.wrapR-item {
+  height: 30%;
+  margin-top: 4rpx;
+  font-size: small;
+  font-weight: bolder;
+  margin-left: 20rpx;
+}
+.account-area {
+  position: absolute;
+  top: 14vh;
+  height: 85vh;
+  margin-top: 40rpx;
+  padding-top: 40rpx;
+  border-radius: 20rpx;
+  background-color: rgba(255,255,255,0.7);
+}
+.item {
+  width: 90%;
+  margin: auto;
+}
+.item .item-details {
+  box-shadow: 0 2rpx 2rpx rgba(0,0,0,0.11),0 4rpx 4rpx rgba(0,0,0,0.11),0 8rpx 8rpx rgba(0,0,0,0.11),0 12rpx 16rpx rgba(0,0,0,0.11),0 16rpx 32rpx rgba(0,0,0,0.11);
+  border-radius: 8rpx;
+  color: #322f3b;
+  font-weight: lighter;
+  margin: auto auto 10rpx;
+  display: flex;
+  flex-direction: row;
+  height: 160rpx;
+  transition: width 0.2s;
+}
+.item .item-details .item-details-left {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+}
+.item .item-details .item-details-left .item-details-category {
+  height: 80rpx;
+  width: 80rpx;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: #322f3b;
+  font-size: 40rpx;
+  color: #e2e1e4;
+  font-weight: bolder;
+  border-radius: 198rpx;
+  margin-left: 10rpx;
+}
+.item .item-details .item-details-left .item-details-category ._span {
+  line-height: 80rpx;
+  text-align: center;
+}
+.item .item-details .item-details-middle {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item .item-details .item-details-middle .details-top {
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+}
+.item .item-details .item-details-middle .details-top .item-details-subcategory {
+  margin-left: 30rpx;
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.item .item-details .item-details-middle .details-top .item-details-subcategory ._span {
+  background-color: #322f3b;
+  color: #e2e1e4;
+  text-align: center;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  padding: 4rpx;
+  font-weight: bolder;
+}
+.item .item-details .item-details-middle .details-top .item-details-pay {
+  margin-left: 30rpx;
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.item .item-details .item-details-middle .details-top .item-details-pay ._span {
+  color: #e2e1e4;
+  text-align: center;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  padding: 4rpx;
+  font-weight: bolder;
+}
+.item .item-details .item-details-middle .details-bottom {
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+.item .item-details .item-details-middle .details-bottom .item-details-desc {
+  font-weight: bolder;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border: 2rpx dashed #e2e1e4;
+  border-radius: 20rpx;
+  padding: 6rpx;
+  width: 100%;
+}
+.item .item-details .item-details-middle .details-bottom .item-details-desc ._span {
+  text-align: center;
+  font-size: 24rpx;
+}
+.item .item-details .item-details-right {
+  margin-left: auto;
+  margin-right: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+.item .item-details .item-details-right .item-details-value {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 160rpx;
+}
+.item .item-details .item-details-right .item-details-value ._span {
+  line-height: 160rpx;
+  font-size: 60rpx;
+}
+.in {
+  color: green;
+}
+.out {
+  color: crimson;
+}
+.pay-by-weChat {
+  background-color: limegreen;
+}
+.pay-by-bankCard {
+  background-color: midnightblue;
+}
+.pay-by-aliPay {
+  background-color: dodgerblue;
+}
+.pay-by-other {
+  background-color: #322f3b;
+}
+.pay-by-ICBC {
+  background-color: #c7000b;
+}
+.pay-by-ABC {
+  background-color: #37b7a5;
+}
+.ec-canvas.data-v-3345b39f {
+  width: 100%;
+  height: 100%;
+}

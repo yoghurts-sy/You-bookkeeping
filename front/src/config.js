@@ -1,4 +1,4 @@
-const server = "http://localhost:8510"
+const server = "http://192.168.203.1:8081"
 
 const config = {
   server,

@@ -5,7 +5,7 @@
 <mapper namespace="com.yoghurt.back.dao.AccountMapper">
     <resultMap id="BaseResultMap" type="com.yoghurt.back.pojo.Account">
         <id column="id" jdbcType="INTEGER" property="id" />
-        <result column="record_type" jdbcType="INTEGER" property="record_type" />
+        <result column="record_type" jdbcType="INTEGER" property="record_type" /><!--column代表数据库中的字段，但是两者最好都要一一对应-->
         <result column="category" jdbcType="VARCHAR" property="category" />
         <result column="subcategory" jdbcType="VARCHAR" property="category" />
         <result column="record_desc" jdbcType="VARCHAR" property="record_desc" />

@@ -1,0 +1,21 @@
+<template name="40b49f3e">
+  <view class="_div data-v-16e81f52">
+    <view class="_div data-v-16e81f52 headLine">——· 优记账 ·——</view>
+    <view class="_div data-v-16e81f52 avatar-container">
+      <view class="_div data-v-16e81f52">{{currentUser.nickName}}</view>
+      <image src="{{currentUser.avatarUrl}}" alt class="_img data-v-16e81f52"></image>
+    </view>
+    <view class="_div data-v-16e81f52 user-options">
+      <view class="_div data-v-16e81f52 left-msg">用户子页面</view>
+      <view class="_div data-v-16e81f52 right-msg"> > </view>
+    </view>
+    <view class="_div data-v-16e81f52 user-options">
+      <view class="_div data-v-16e81f52 left-msg">用户子页面</view>
+      <view class="_div data-v-16e81f52 right-msg"> > </view>
+    </view>
+    <view class="_div data-v-16e81f52 user-options">
+      <view class="_div data-v-16e81f52 left-msg">用户子页面</view>
+      <view class="_div data-v-16e81f52 right-msg"> > </view>
+    </view> <button class="_button data-v-16e81f52 logout" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">退出</button>
+  </view>
+</template>

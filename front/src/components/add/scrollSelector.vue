@@ -19,7 +19,6 @@
                 closeFlag: true // true:不接受change事件
             }
         },
-
         methods: {
             open () {
                 this.closeFlag = false

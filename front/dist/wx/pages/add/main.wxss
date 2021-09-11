@@ -1,0 +1,197 @@
+
+.line {
+  margin: 40rpx;
+  border-bottom: 2rpx solid #cccccc;
+  box-shadow: 0 2rpx 2rpx rgba(0,0,0,0.11),0 4rpx 4rpx rgba(0,0,0,0.11),0 8rpx 8rpx rgba(0,0,0,0.11),0 12rpx 16rpx rgba(0,0,0,0.11),0 16rpx 32rpx rgba(0,0,0,0.11);
+}
+.edit-item-tip {
+  text-align: center;
+  font-size: 30rpx;
+  color: #cccccc;
+}
+.edit-item-pay ._ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.edit-item-pay ._ul .deactivate-pay {
+  background-color: rgba(0,0,0,0.3) !important;
+}
+.edit-item-pay ._ul .pay {
+  box-shadow: 0 2rpx 2rpx rgba(0,0,0,0.11),0 4rpx 4rpx rgba(0,0,0,0.11),0 8rpx 8rpx rgba(0,0,0,0.11),0 12rpx 16rpx rgba(0,0,0,0.11),0 16rpx 32rpx rgba(0,0,0,0.11);
+  width: 25%;
+  margin: 20rpx;
+  color: white;
+  text-align: center;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  padding: 4rpx;
+  font-weight: bolder;
+}
+.edit-container {
+  padding: 20rpx;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.edit-container .edit-items {
+  flex: 1 0 auto;
+  border-radius: 8rpx;
+  padding: 10rpx;
+}
+.edit-container .edit-items .edit-item-desc {
+  width: auto !important;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  padding: 40rpx;
+  height: 120rpx;
+}
+.edit-container .cal-root {
+  position: fixed;
+  bottom: 20rpx;
+  width: 90%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.edit-item-val-type {
+  margin-top: 20rpx;
+  border: 2rpx solid white;
+  border-radius: 8rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 60rpx;
+  font-weight: bolder;
+  text-shadow: 0 2rpx 2rpx rgba(0,0,0,0.11),0 4rpx 4rpx rgba(0,0,0,0.11),0 8rpx 8rpx rgba(0,0,0,0.11),0 12rpx 16rpx rgba(0,0,0,0.11),0 16rpx 32rpx rgba(0,0,0,0.11);
+  display: flex;
+}
+.edit-item-val-type .edit-item-type {
+  font-size: 24rpx;
+  margin-left: 100rpx;
+}
+.edit-item-val-type .edit-item-value {
+  text-align: center;
+  translate: -10%;
+  flex: 1;
+}
+.in {
+  color: green;
+}
+.out {
+  color: crimson;
+}
+.edit-item-cat {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.edit-item-cat :first-child {
+  font-weight: bolder;
+  color: #322f3b;
+  border: 2rpx solid white;
+  border-radius: 8rpx;
+}
+.edit-item-cat :last-child {
+  font-weight: bolder;
+  color: #322f3b;
+  border: 2rpx solid white;
+  border-radius: 8rpx;
+}
+.edit-item-cat ._div {
+  font-weight: bolder;
+  padding: 10rpx;
+  border-radius: 8rpx;
+  width: 30%;
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.picker-view {
+  width: 100%;
+  height: 600rpx;
+}
+.picker-view-col {
+  line-height: 100rpx;
+  text-align: center;
+}
+.log {
+  text-align: center;
+  border-radius: 8rpx;
+  font-weight: bolder;
+  background-color: deepskyblue;
+  color: white;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 80%;
+  margin: auto;
+  margin-top: 40rpx;
+  border: 0;
+  box-shadow: 0 2rpx 2rpx rgba(0,0,0,0.11),0 4rpx 4rpx rgba(0,0,0,0.11),0 8rpx 8rpx rgba(0,0,0,0.11),0 12rpx 16rpx rgba(0,0,0,0.11),0 16rpx 32rpx rgba(0,0,0,0.11);
+}
+.calculator {
+  background-color: white;
+  border: 2rpx solid white;
+  border-radius: 8rpx;
+  box-shadow: 0 2rpx 2rpx rgba(0,0,0,0.11),0 4rpx 4rpx rgba(0,0,0,0.11),0 8rpx 8rpx rgba(0,0,0,0.11),0 12rpx 16rpx rgba(0,0,0,0.11),0 16rpx 32rpx rgba(0,0,0,0.11);
+}
+.calculator .cal-screen {
+  border: 2rpx solid white;
+  border-radius: 8rpx;
+  box-shadow: inset 2rpx 2rpx 2rpx 2rpx rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  background-color: #e2e1e4;
+  height: 60rpx;
+}
+.calculator .cal-screen ._span {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 44rpx;
+  color: #322f3b;
+}
+.calculator .cal-panel {
+  margin: 2rpx 10rpx;
+  padding: 10rpx 4rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.calculator .cal-panel .cal-col {
+  width: 19%;
+  margin: 4rpx;
+  display: flex;
+  flex-direction: column;
+}
+.calculator .cal-panel .cal-col .cal-btn {
+  border: 2rpx solid white;
+  border-radius: 8rpx;
+  color: #322f3b;
+  display: flex;
+  justify-content: center;
+  font-size: 48rpx;
+  font-weight: bolder;
+  margin: 4rpx;
+  background-color: white;
+  box-shadow: 0 2rpx 2rpx rgba(0,0,0,0.11),0 4rpx 4rpx rgba(0,0,0,0.11),0 8rpx 8rpx rgba(0,0,0,0.11),0 12rpx 16rpx rgba(0,0,0,0.11),0 16rpx 32rpx rgba(0,0,0,0.11);
+}
+.calculator .cal-panel .cal-col .cal-btn:active {
+  background-color: #c6e6e8;
+}
+.calculator .cal-panel .cal-col .cal-ok {
+  flex-direction: column;
+  height: 100%;
+  border: 2rpx solid dodgerblue;
+  background-color: dodgerblue;
+  color: white;
+}
+.calculator .cal-panel .cal-col .cal-ok ._span {
+  text-align: center;
+}
+.picker-view-indicator {
+  color: #322f3b;
+  border-bottom: 2rpx solid rgba(0,0,0,0.11);
+}
+.picker-view-col {
+  background-color: white;
+}
