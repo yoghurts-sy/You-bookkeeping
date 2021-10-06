@@ -1,6 +1,0 @@
-<import src="/components/index/login.vue.wxml" />
-<import src="/components/index/accounts.vue.wxml" />
-<import src="/components/card.vue.wxml" />
-<import src="/components/add/calculator.vue.wxml" />
-<import src="/components/add/scrollSelector.vue.wxml" />
-<import src="/modules/mpvue-echarts/src/echarts.vue.wxml" />

@@ -1,0 +1,33 @@
+<import src="/components/add/calculator.vue.wxml" />
+<import src="/components/add/scrollSelector.vue.wxml" /><template name="55920a02">
+  <view class="_div data-v-29a276ac edit-container">
+    <view class="_div data-v-29a276ac edit-items" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-29a276ac edit-item-tip">——· 收支金额 ·——</view>
+      <view class="_div data-v-29a276ac edit-item-val-type" catchtap="handleProxy" bindtouchstart="handleProxy" bindtouchend="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-29a276ac {{accountItem.record_type === 0 ? 'edit-item-type out' : 'edit-item-type in'}}">{{accountItem.record_type === 0 ? '支出':'收入'}}</view>
+        <view class="_div data-v-29a276ac {{accountItem.record_type === 0 ? 'edit-item-value out' : 'edit-item-value in'}}">{{accountItem.record_value}}</view>
+      </view>
+      <view class="_div data-v-29a276ac edit-item-tip">——· 分类 ·——</view>
+      <view class="_div data-v-29a276ac edit-item-cat" catchtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-29a276ac">{{accountItem.category}}</view>
+        <view class="_div data-v-29a276ac">></view>
+        <view class="_div data-v-29a276ac">{{accountItem.subcategory}}</view>
+      </view>
+      <view class="_div data-v-29a276ac edit-item-tip">——· 日期 ·——</view>
+      <view class="_div data-v-29a276ac edit-item-cat" catchtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-29a276ac">{{accountItem.record_date}}</view>
+      </view>
+      <view class="_div data-v-29a276ac edit-item-tip">——· 描述 ·——</view> <textarea placeholder="输入一些描述吧..." class="_textarea data-v-29a276ac edit-item-desc" value="{{accountItem.record_desc}}" bindinput="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" />
+      <view class="_div data-v-29a276ac edit-item-tip">——· 支付方式 ·——</view>
+      <view class="_div data-v-29a276ac edit-item-pay">
+        <view class="_ul data-v-29a276ac">
+          <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'4_'+index}}" data-comkey="{{$k}}" wx:for="{{payMethod}}" wx:for-index="index" wx:for-item="item" class="_li data-v-29a276ac {{!item.isSelected ? 'deactivate-pay pay' : 'pay'}}" style=" {{'background-color:' + item.color}}">{{item.payCn}}
+          </view>
+        </view>
+      </view>
+      <view bindtap="handleProxy" class="_div data-v-29a276ac log" data-eventid="{{'5'}}" data-comkey="{{$k}}">记账!</view>
+    </view>
+    <view class="_div data-v-29a276ac cal-root"><template bindres="handleProxy" wx:if="{{showCalculator}}" data-eventid="{{'7'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="0482f5e3"></template></view>
+    <view hidden="{{!(showSelector)}}" class="_div data-v-29a276ac cal-root"><template bindres="handleProxy" ref="selector" data-eventid="{{'8'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="7ac86b2d"></template></view>
+  </view>
+</template>

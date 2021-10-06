@@ -1,0 +1,14 @@
+<import src="/components/card.vue.wxml" /><template name="a4661726">
+  <view class="_div data-v-dbce2cc8">
+    <swiper wx:if="{{imgUrls.length > 0}}" indidator-dots="imgUrls.length > 1" class="_swiper data-v-dbce2cc8">
+      <block wx:key="index" key="{{index}}" wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item">
+        <swiper-item class="_swiper-item data-v-dbce2cc8">
+          <image src="{{item}}" mode="scaleToFill" class="_image data-v-dbce2cc8"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="_ul data-v-dbce2cc8 container log-list">
+      <view wx:key="index" key="{{index}}" class="_li data-v-dbce2cc8 log-item {{[aa ? 'red' : '']}}" wx:for="{{logs}}" wx:for-index="index" wx:for-item="log"><template data="{{...$root[$kk+'1_'+index], $root}}" is="19dd2054"></template></view>
+    </view>
+  </view>
+</template>

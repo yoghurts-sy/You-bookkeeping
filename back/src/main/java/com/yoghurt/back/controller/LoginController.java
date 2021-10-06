@@ -3,6 +3,8 @@ package com.yoghurt.back.controller;
 import com.yoghurt.back.pojo.CustomResult;
 import com.yoghurt.back.utils.HttpUtils;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
@@ -11,11 +13,12 @@ import java.util.Map;
 
 
 @RestController
+@RequestMapping("/api")
 public class LoginController {
     String APPID = "wx485a487e16cf3b44";
     String secret = "12cfe0a7a50b6b30529a4c3bec2fdcd1";
 
-    @GetMapping("/api/login")
+    @GetMapping("/login")
     public CustomResult Login(String code) throws IOException {
         System.out.println(code);
         //GET https://api.weixin.qq.com/sns/jscode2session ? appid=APPID & secret=SECRET & js_code=JSCODE & grant_type = authorization_code
@@ -28,5 +31,11 @@ public class LoginController {
         String urlResult = HttpUtils.getResponse(urlHeader, params);
 
         return new CustomResult(urlResult);
+    }
+
+    @GetMapping("/hello")
+    @ResponseBody
+    public String Hello() {
+        return "Hello";
     }
 }

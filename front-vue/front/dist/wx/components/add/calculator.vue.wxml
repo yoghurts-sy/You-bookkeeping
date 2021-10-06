@@ -1,0 +1,15 @@
+<template name="0482f5e3">
+  <view class="_div data-v-680ad55a">
+    <view class="_div data-v-680ad55a calculator">
+      <view class="_div data-v-680ad55a cal-screen"><label class="_span data-v-680ad55a">{{calInputContent}}</label></view>
+      <view class="_div data-v-680ad55a cal-panel">
+        <view class="_div data-v-680ad55a cal-col" wx:key="colIndex" key="{{colIndex}}" wx:for="{{cols}}" wx:for-index="colIndex" wx:for-item="col">
+          <view class="_div data-v-680ad55a cal-btn" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+colIndex+'-'+index}}" data-comkey="{{$k}}" wx:for="{{col}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-680ad55a">{{item}}</label></view>
+        </view>
+        <view class="_div data-v-680ad55a cal-col">
+          <view class="_div data-v-680ad55a cal-btn cal-ok" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"><label class="_span data-v-680ad55a">ok</label></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,7 +1,0 @@
-<import src="/components/index/login.vue.wxml" />
-<import src="/components/index/accounts.vue.wxml" /><template name="36188e2a">
-  <view class="_div data-v-7efcd81b">
-    <view wx:if="{{notLogin}}" class="_div data-v-7efcd81b"><template bindloginsuccess="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'0'], $root}}" is="1ae1e10f"></template></view>
-    <view style="border-radius: 10px;" wx:else class="_div data-v-7efcd81b"><template ref="accounts" data="{{...$root[$kk+'1'], $root}}" is="8bfcc5a0"></template></view>
-  </view>
-</template>
